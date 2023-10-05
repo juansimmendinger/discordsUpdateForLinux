@@ -1,0 +1,22 @@
+
+
+
+sudo apt install plocate
+
+locate build_info.json
+
+
+STEP BY STEP:
+
+1. bash file that runes which command and finds path to discord
+2. ask user to enter the updated version from discord
+3. nodejs file that inputs and changes the json file with sudo and saves it automatically
+
+
+LET USERS KNOW TO ADD CHOWN AND CHMOD TO FILE with current users to allow it to write with the current user and not the sudo
+
+sudo chmod 755 /usr/share/discord/resources/build_info.json
+sudo chown $(whoami) /usr/share/discord/resources/build_info.json
+
+
+
